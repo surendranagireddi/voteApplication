@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>voter servlet</title>
+<h1 style="color:red"><center>Checking voting eligibility</center></h1>
+<script language="JavaScript" src="validation.js"> </script>
+</head>
+<body>
+<form action ="vturl" method="get" onsubmit="return validate(this)">
+
+
+Name : <input type="text" name="pname"><br/>
+       <span id="nameErr"></span><br/>
+
+
+Age  : <input type="text" name="page"><br/>
+        <span id="ageErr"></span><br/>
+
+
+<input type="hidden" name="vflag" value="no" />
+
+<input type="submit" value="checkvotingEligibility">
+
+
+
+</form>
+
+
+</body>
+</html>
